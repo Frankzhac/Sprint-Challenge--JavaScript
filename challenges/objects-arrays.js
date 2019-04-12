@@ -126,12 +126,17 @@ const lowerCase = zooAnimals.map(function(items){
   return items.animal_name.toLowerCase();
 });
 console.log(lowerCase);
+//
+// const function = arrayToMapOver.map((parameter) => {
+//   return parameter.animal_name.functionThatAdjustsCapitalization();
+// });
+// console.log(function); //use this method next time!!
 
 /* Request 3: .filter()
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 */
-const largerPopulation = zooAnimals.filter((count) => {
-  return count.population < "5";
+const largerPopulation = zooAnimals.filter(count => {
+  return count.population < 5;
 });
 console.log(largerPopulation);//Why I keep returning zooAnimals is not defined, I'm not sure but it's very frustrating.
 
